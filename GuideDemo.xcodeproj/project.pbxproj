@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		326D1BB81EA79344001EA05A /* JSPresentAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326D1BB71EA79344001EA05A /* JSPresentAnimator.swift */; };
 		FE84E5F21EA733E000B174C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE84E5F11EA733E000B174C8 /* AppDelegate.swift */; };
 		FE84E5F41EA733E000B174C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE84E5F31EA733E000B174C8 /* ViewController.swift */; };
 		FE84E5F71EA733E000B174C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE84E5F51EA733E000B174C8 /* Main.storyboard */; };
@@ -14,6 +15,8 @@
 		FE84E5FC1EA733E000B174C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE84E5FA1EA733E000B174C8 /* LaunchScreen.storyboard */; };
 		FE84E6071EA733E000B174C8 /* GuideDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE84E6061EA733E000B174C8 /* GuideDemoTests.swift */; };
 		FE84E6121EA733E000B174C8 /* GuideDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE84E6111EA733E000B174C8 /* GuideDemoUITests.swift */; };
+		FE84E6271EA73F3000B174C8 /* qidong.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FE84E6261EA73F3000B174C8 /* qidong.mp4 */; };
+		FE84E6291EA74A8900B174C8 /* JSGuideController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE84E6281EA74A8900B174C8 /* JSGuideController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		326D1BB71EA79344001EA05A /* JSPresentAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSPresentAnimator.swift; sourceTree = "<group>"; };
 		FE84E5EE1EA733E000B174C8 /* GuideDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuideDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE84E5F11EA733E000B174C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE84E5F31EA733E000B174C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,8 @@
 		FE84E60D1EA733E000B174C8 /* GuideDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuideDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE84E6111EA733E000B174C8 /* GuideDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideDemoUITests.swift; sourceTree = "<group>"; };
 		FE84E6131EA733E000B174C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE84E6261EA73F3000B174C8 /* qidong.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = qidong.mp4; sourceTree = "<group>"; };
+		FE84E6281EA74A8900B174C8 /* JSGuideController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSGuideController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,8 @@
 		FE84E5F01EA733E000B174C8 /* GuideDemo */ = {
 			isa = PBXGroup;
 			children = (
+				FE84E6261EA73F3000B174C8 /* qidong.mp4 */,
+				FE84E61F1EA7342800B174C8 /* JSGuideview */,
 				FE84E5F11EA733E000B174C8 /* AppDelegate.swift */,
 				FE84E5F31EA733E000B174C8 /* ViewController.swift */,
 				FE84E5F51EA733E000B174C8 /* Main.storyboard */,
@@ -123,6 +131,15 @@
 				FE84E6131EA733E000B174C8 /* Info.plist */,
 			);
 			path = GuideDemoUITests;
+			sourceTree = "<group>";
+		};
+		FE84E61F1EA7342800B174C8 /* JSGuideview */ = {
+			isa = PBXGroup;
+			children = (
+				FE84E6281EA74A8900B174C8 /* JSGuideController.swift */,
+				326D1BB71EA79344001EA05A /* JSPresentAnimator.swift */,
+			);
+			path = JSGuideview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +204,7 @@
 		FE84E5E61EA733E000B174C8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = JS;
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Jesson;
@@ -235,6 +253,7 @@
 				FE84E5FC1EA733E000B174C8 /* LaunchScreen.storyboard in Resources */,
 				FE84E5F91EA733E000B174C8 /* Assets.xcassets in Resources */,
 				FE84E5F71EA733E000B174C8 /* Main.storyboard in Resources */,
+				FE84E6271EA73F3000B174C8 /* qidong.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +278,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE84E6291EA74A8900B174C8 /* JSGuideController.swift in Sources */,
 				FE84E5F41EA733E000B174C8 /* ViewController.swift in Sources */,
 				FE84E5F21EA733E000B174C8 /* AppDelegate.swift in Sources */,
+				326D1BB81EA79344001EA05A /* JSPresentAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +528,7 @@
 				FE84E6181EA733E000B174C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE84E6191EA733E000B174C8 /* Build configuration list for PBXNativeTarget "GuideDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +537,7 @@
 				FE84E61B1EA733E000B174C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE84E61C1EA733E000B174C8 /* Build configuration list for PBXNativeTarget "GuideDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +546,7 @@
 				FE84E61E1EA733E000B174C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

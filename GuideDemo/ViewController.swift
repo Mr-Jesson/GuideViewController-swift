@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  GuideDemo
 //
-//  Created by 洪亚明 on 2017/4/19.
+//  Created by Jesson on 2017/4/19.
 //  Copyright © 2017年 Jesson. All rights reserved.
 //
 
@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.brown
         // Do any additional setup after loading the view, typically from a nib.
     }
 

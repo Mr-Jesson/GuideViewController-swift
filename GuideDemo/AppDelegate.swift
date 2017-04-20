@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  GuideDemo
 //
-//  Created by 洪亚明 on 2017/4/19.
+//  Created by Jesson on 2017/4/19.
 //  Copyright © 2017年 Jesson. All rights reserved.
 //
 
@@ -15,6 +15,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        let videoPath = Bundle.main.path(forResource: "qidong", ofType: "mp4")
+        let nav = UINavigationController.init(rootViewController: ViewController())
+        let guideVc = JSGuideController.init(guide: .picture, pictures: ["guide_1","guide_2","guide_3"], videoPath: nil,pushViewController:nav)
+//        let guideVc = JSGuideController.init(guide: .video, pictures: nil, videoPath: videoPath,pushViewController:nav)
+        self.window?.rootViewController = guideVc
+       
+        // 得到当前应用的版本号
+//        let infoDictionary = Bundle.main.infoDictionary
+//        let currentAppVersion = infoDictionary!["CFBundleShortVersionString"] as! String
+//        // 取出之前保存的版本号
+//        let userDefaults = UserDefaults.standard
+//        let appVersion = userDefaults.string(forKey: "appVersion")
+//        // 如果 appVersion 为 nil 说明是第一次启动；如果 appVersion 不等于 currentAppVersion 说明是更新了
+//        if appVersion == nil || appVersion != currentAppVersion {
+//            // 保存最新的版本号
+//            userDefaults.setValue(currentAppVersion, forKey: "appVersion")
+//            let videoPath = Bundle.main.path(forResource: "qidong", ofType: "mp4")
+//            let guideVc = JSGuideController.init(guide: .video, pictures: nil, videoPath: videoPath)
+//            
+////            let guideVc = JSGuideController.guidedefault
+//            self.window?.rootViewController = guideVc
+//        }
         // Override point for customization after application launch.
         return true
     }
